@@ -1,7 +1,7 @@
 'use client';
 
 import useRegister from '@/hooks/auth/useRegister';
-import { RegisterForm } from '@/types/authen/auth.type';
+import { RegisterForm } from '@/types/auth/auth.type';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 

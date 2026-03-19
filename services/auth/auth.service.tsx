@@ -1,4 +1,4 @@
-import { LoginForm, RegisterForm } from '@/types/authen/auth.type';
+import { LoginForm, RegisterForm } from '@/types/auth/auth.type';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL!;
 export const handleAuth = {

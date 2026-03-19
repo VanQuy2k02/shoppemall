@@ -1,7 +1,6 @@
 'use client';
 
 import { useForm } from 'react-hook-form';
-import Link from 'next/link';
 import useLogin from '@/hooks/auth/useLogin';
 import { LoginForm } from '@/types/auth/auth.type';
 
@@ -21,7 +20,7 @@ export default function LoginPage() {
   const onSubmit = (data: LoginTypes) => {
     const payload: LoginForm = {
       ...data,
-      role: 'USER',
+      role: 'ADMIN',
     };
     mutate(payload);
   };
@@ -77,14 +76,6 @@ export default function LoginPage() {
         >
           {isPending ? 'Logging in...' : 'Login'}
         </button>
-
-        {/* Register link */}
-        <p className="text-center text-sm text-gray-600 mt-4">
-          Chưa có tài khoản?{' '}
-          <Link href="/register" className="text-blue-600 font-medium hover:underline">
-            Đăng ký
-          </Link>
-        </p>
       </form>
     </div>
   );

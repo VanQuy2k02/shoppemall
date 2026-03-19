@@ -1,6 +1,6 @@
 'use client';
-import { handleAuth } from '@/services/authen/auth.service';
-import { RegisterForm } from '@/types/authen/auth.type';
+import { handleAuth } from '@/services/auth/auth.service';
+import { RegisterForm } from '@/types/auth/auth.type';
 import { useMutation } from '@tanstack/react-query';
 import { useRouter } from 'next/navigation';
 
